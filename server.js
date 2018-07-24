@@ -24,7 +24,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json()); // since body-parser is a middleware
 
-app.get('/',(req,res)=>{res.send(database.users)})
+app.get('/',(req,res)=>{res.send("working fine")})
 
 app.post('/signin',(req,res) => {signin.handleSignin(req,res,db,bcrypt)})
 
